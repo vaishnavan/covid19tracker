@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+}
+body{
+  background: #f5f6fa;
+}
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.app_status{
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width:990px){
+  .app{
+    display: flex;
+    flex-direction: column;
+  }
+  .app_status{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.app_left{
+  flex: 0.9;
+}
+.app_header h1{
+  background-color: rgba(88, 86, 86, 0.514);
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  width: 50%;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: rgb(238, 225, 225);
+  border: 2px solid rgba(0, 0, 0, 0.616);
+}
+.card{
+  border-top: 8px solid rgba(0, 255, 179, 0.644);
+  cursor: pointer;
+}
+.app_right h3{
+  margin-top: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: gray;
+  padding: 10px;
+  color: rgba(226, 224, 221, 0.836);
+  border: 2px solid rgba(0, 0, 0, 0.418);
+}
+.selecttab{
+  width: 200px;
+  border: 1px solid gray;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  background: white;
+}
+@media(max-width:550px){
+  .app_header h1{
+      display: none;
+  }
+  .selecttab{
+    text-align: center;
+    margin-left: -300px;
+  }
+}
